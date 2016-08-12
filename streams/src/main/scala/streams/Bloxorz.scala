@@ -50,4 +50,6 @@ object Bloxorz extends App {
   println(Level1.terrain(Level1.Pos(-1,0)))
 
   println(Level1.findChar('T', Vector(Vector('S', 'T'), Vector('o', 'o'), Vector('o', 'o'))).toString)
+
+  println(Level1.neighborsWithHistory(Level1.Block(Level1.Pos(1,1),Level1.Pos(1,1)), List(Level1.Left,Level1.Up)))
 }
